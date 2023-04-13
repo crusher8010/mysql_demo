@@ -6,7 +6,7 @@ app.use(express.json());
 
 const userRouter = require("./api/users/userRouter");
 
-app.use("/api/users", userRouter);
+app.use("/", userRouter);
 
 let port = process.env.PORT
 app.listen(port, () => {
